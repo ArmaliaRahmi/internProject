@@ -1,0 +1,54 @@
+body{
+  padding-top:4rem;
+  padding-bottom:4rem;
+  background:rgba(139, 70, 70, 0);
+}
+a{
+  text-decoration:none !important;
+}
+/* h1,h2,h3{
+  font-family: 'Kaushan Script', cursive;
+} */
+.formLogin{
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 1.1rem;
+  outline: 10;
+  max-width: 500px;
+}
+.formRegis{
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 250%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 1.1rem;
+  outline: 0;
+  max-width: 500px;
+}
+.tx-tfm{
+  text-transform:uppercase;
+}
+.mybtn{
+  border-radius:50px;
+}
+
+
+form .error {
+  color: #ff0000;
+}
