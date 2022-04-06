@@ -2,7 +2,7 @@
 @section('ourcode')
 
 <div class="row">
-	<div class="col-md-5 mx-auto">
+	<div class="card-md-5 mx-auto">
 		<div id="second">
 			<div class="formRegis form">
 				<div class="logo mb-3">
