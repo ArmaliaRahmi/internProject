@@ -6,9 +6,7 @@ body{
 a{
   text-decoration:none !important;
 }
-/* h1,h2,h3{
-  font-family: 'Kaushan Script', cursive;
-} */
+
 .formLogin{
   position: relative;
   display: -ms-flexbox;
@@ -32,13 +30,14 @@ a{
   padding: 1rem;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 250%;
+  width: 100%;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0,0,0,.2);
-  outline: 0;
-  max-width: 500px;
+  border-radius: 1.1rem;
+  outline: 10;
+  max-width: 1000px;
 }
 .tx-tfm{
   text-transform:uppercase;
