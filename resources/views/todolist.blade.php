@@ -178,26 +178,27 @@
                 <div class="card p-4">
                   <div class=" image d-flex flex-column justify-content-center align-items-center"><img src="https://img.icons8.com/dusk/100/000000/user-female-circle.png" height="100" width="100" /></button> 
                     <span class="name mt-2">Armalia Rahmi</span> 
-                    <span class="name mb-2">armaliarahmi@gmail.com</span> 
+                    <span class="email mb-2">armaliarahmi@gmail.com</span> 
                   </div>
                   <form>
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="picname">PIC Name</label>
-                        <input type="text" class="form-control" id="inputEmail4" placeholder="PIC Name">
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="PIC Name" value="AR">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="inputPassword4">Company Name</label>
-                        <input type="text" class="form-control" id="inputPassword4" placeholder="Company Name">
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Company Name" value="PT. A">
                       </div>
                     </div>
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="picname">Service Group</label>
-                        <input type="text" class="form-control" id="servicegroup" placeholder="Service group">
+                        <input type="text" class="form-control" id="servicegroup" placeholder="Service group" value="Shared">
+                      </div>
                       <div class="form-group col-md-6">
                         <label for="inputPassword4">Service Type</label>
-                        <input type="text" class="form-control" id="servicetype" placeholder="service type">
+                        <input type="text" class="form-control" id="servicetype" placeholder="service type" value="FAQ">
                       </div>
                     </div>
                     <div class="form-group">
@@ -205,23 +206,23 @@
                         <div class="form-row">
                           <div class="form-group col-md-6">
                             <label for="whatsapp">Whatsapp</label>
-                            <input type="text" id="whathapp"  class="form-control"  placeholder="Channel Whatsapp">
+                            <input type="text" id="whathapp"  class="form-control"  placeholder="Channel Whatsapp" value="08xxxxxxxx88">
                           </div>
                           <div class="form-group col-md-6">
                             <label for="whatsapp">Telegram</label>
-                            <input type="text" id="telegram"  class="form-control"  placeholder="Channel Telegram">
+                            <input type="text" id="telegram"  class="form-control"  placeholder="Channel Telegram" value="@ar">
                           </div>
                           <div class="form-group col-md-6">
                             <label for="whatsapp">Slack</label>
-                            <input type="text" id="slack"  class="form-control" placeholder="Channel slack">
+                            <input type="text" id="slack"  class="form-control" placeholder="Channel slack" value="@arra">
                           </div>
                           <div class="form-group col-md-6">
                             <label for="whatsapp">Coster</label>
-                            <input type="text" id="coster"  class="form-control" placeholder="Channel coster">
+                            <input type="text" id="coster"  class="form-control" placeholder="Channel coster" value="-">
                           </div>
                           <div class="form-group col-md-6">
                             <label for="whatsapp">Custom</label>
-                            <input type="text" id="custom"  class="form-control" placeholder="Channel custom">
+                            <input type="text" id="custom"  class="form-control" placeholder="Channel custom" value="-">
                           </div>
                         </div>
                     </div>

@@ -38,7 +38,7 @@
                     <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                         <div class="nav-user-info mb-2">
                             <h5 class="text-white nav-user-name">Armalia Rahmi</h5> 
-                            <span class="status">available</span><br>
+                            <span class="status text-center">available</span><br>
                         </div> 
                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalProfile" ><i class="fas fa-user mr-2"></i>Profile</a> 
                         <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a> 

@@ -51,8 +51,4 @@ $('.reload').click(function () {
       }
   });
 });
-// Data Picker
-// $('.datepicker').datepicker({
-//   inline: true
-// });
 
