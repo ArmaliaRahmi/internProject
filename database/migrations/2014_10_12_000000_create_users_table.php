@@ -18,7 +18,15 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->boolean('is_admin')->default(false);
             $table->string('password');
+            $table->string('whatsapp');
+            $table->string('slack');
+            $table->string('telegram');
+            $table->string('coster');
+            $table->string('custumchannel');
+            $table->enum('servicegroup');
+            $table->enum('servicetype');
             $table->rememberToken();
             $table->timestamps();
         });
