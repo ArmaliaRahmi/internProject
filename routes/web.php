@@ -19,6 +19,9 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
+Route::get('/todolist', function () {
+    return view('todolist');
+});
 Route::get('/contact-form', [CaptchaController::class, 'register']);
 Route::post('/captcha-validation', [CaptchaController::class, 'capthcaFormValidate']);
 Route::get('/reload-captcha', [CaptchaController::class, 'reloadCaptcha']);

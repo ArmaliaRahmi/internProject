@@ -164,6 +164,75 @@
         </div>
       </div>
       <!-- end add task -->
+      <!-- modal profile -->
+      <div class="modal fade" id="modalProfile" tabindex="-1" role="dialog" aria-labelledby="myProfileModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title" id="myprofileModal">Detail Profile</h4>
+            </div>
+            <!-- modal body -->
+            <div class="modal-body">
+              <form action="" method="post" autocomplete="off">
+                <div class="card p-4">
+                  <div class=" image d-flex flex-column justify-content-center align-items-center"><img src="https://img.icons8.com/dusk/100/000000/user-female-circle.png" height="100" width="100" /></button> 
+                    <span class="name mt-2">Armalia Rahmi</span> 
+                    <span class="name mb-2">armaliarahmi@gmail.com</span> 
+                  </div>
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="picname">PIC Name</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="PIC Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Company Name</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Company Name">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="picname">Service Group</label>
+                        <input type="text" class="form-control" id="servicegroup" placeholder="Service group">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Service Type</label>
+                        <input type="text" class="form-control" id="servicetype" placeholder="service type">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="channel">Channel</label> 
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="whatsapp">Whatsapp</label>
+                            <input type="text" id="whathapp"  class="form-control"  placeholder="Channel Whatsapp">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="whatsapp">Telegram</label>
+                            <input type="text" id="telegram"  class="form-control"  placeholder="Channel Telegram">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="whatsapp">Slack</label>
+                            <input type="text" id="slack"  class="form-control" placeholder="Channel slack">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="whatsapp">Coster</label>
+                            <input type="text" id="coster"  class="form-control" placeholder="Channel coster">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="whatsapp">Custom</label>
+                            <input type="text" id="custom"  class="form-control" placeholder="Channel custom">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button></div>
+            </div>
+      </div>
     </div>
 </div>
 @endsection
