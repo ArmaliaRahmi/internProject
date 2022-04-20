@@ -10,7 +10,7 @@
         <div class="card-header">
           To Do!
           <button type="button" class="btn btn-primary plus" data-toggle="modal" data-target="#modalAddTask" style="float: right">
-          <i style="font-size:10px" class="fa">&#xf055;<span data-feather="plus"></span> Add Task</button></i>
+          <i style="font-size:10 px" class="fa">&#xf055;<span data-feather="plus"></span> Add Task</button></i>
         </div>
         <div class="card-body">
           <div class="card p-1 mb-2 mr-0 ml-0 draggable shadow-sm" id="cd1" draggable="true" ondragstart="drag(event)">
