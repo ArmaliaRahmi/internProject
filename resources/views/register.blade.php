@@ -1,5 +1,7 @@
 @extends('layouts.main')
 @section('ourcode')
+<title>Register</title>
+
 
 <div class="row">
 	<div class="card-md-5 mx-auto">
@@ -18,7 +20,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputCompany">Company Name</label>
-                            <input type="text" name="company"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Company Name">
+                            <input type="text" name="compName"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Company Name">
                         </div> 
                     </div>
                     <div class="form-group">
@@ -28,7 +30,7 @@
 
                     <div class="form-group">
                         <label for="serviceGroup">Service Group</label> 
-                        <select class="custom-select" id = "sgAns" onchange = "selectAnswer()">
+                        <select class="custom-select" id = "sgAns" name="serviceGroup" onchange = "selectAnswer()">
                             <option selected>Select Service Group</option>
                             <option value="1">Shared</option>
                             <option value="2">Dedicated</option>
@@ -52,28 +54,28 @@
                         <div class="form-group col-md-6">
                             <input type="checkbox" id="whatsapp">
                             <label for="whatsapp">Whatsapp</label>
-                            <input type="text" name="channel" id="whathapp"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Channel Whatsapp">
+                            <input type="text" name="whathapp" id="whathapp"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Channel Whatsapp">
                         </div>
                         <div class="form-group col-md-6">
                             <input type="checkbox" id="telegram">
                             <label for="telegram">Telegram</label>
-                            <input type="text" name="channel" id="telegram"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Channel Telegram">
+                            <input type="text" name="telegram" id="telegram"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Channel Telegram">
                         </div>
                         <div class="form-group col-md-6">
                             <input type="checkbox" id="slack">
                             <label for="slack">Slack</label>
-                            <input type="text" name="channel" id="slack"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Channel Slack">
+                            <input type="text" name="slack" id="slack"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Channel Slack">
                         </div>
                         <div class="form-group col-md-6">
                             <input type="checkbox" id="coster">
                             <label for="coster">Coster</label>
-                            <input type="text" name="channel" id="coster"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Channel Coster">
+                            <input type="text" name="coster" id="coster"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Channel Coster">
                         </div>
                         </div>
                         <div class="form-group">
                             <input type="checkbox" id="ssAns" onchange="checkAnswer()">
                             <label for="custom">Custom</label>
-                            <input type="text" name="channel"  class="form-control" id="custom" aria-describedby="emailHelp" placeholder="Enter your channel" hidden>
+                            <input type="text" name="custom"  class="form-control" id="custom" aria-describedby="emailHelp" placeholder="Enter your channel" hidden>
                         </div>
                     </div>
 
@@ -82,7 +84,7 @@
                             <label for="password">Password</label>
                             <div class="input-group-append">
                             <input id="password-field" type="password" class="form-control" name="password" placeholder="Enter Password">
-                            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            <i toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password" style="margin-left: -25px;"></i>
                             </div>
                         </div>
 
@@ -90,7 +92,7 @@
                             <label for="password">Password</label>
                             <div class="input-group-append">
                             <input id="password-field" type="password" class="form-control" name="password" placeholder="Enter Password">
-                            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            <i toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password" style="margin-left: -25px;"></i>
                             </div>
                         </div>
                     </div>

@@ -15,8 +15,11 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('picName');
+            $table->string('compName');
             $table->string('email')->unique();
+            $table->enum('serviceGroup', ['Shared', 'Dedicated', 'OnPrem']);
+            $table->enum('serviceShare', ['FAQ', 'Transactional']);
             $table->timestamp('email_verified_at')->nullable();
             $table->boolean('is_admin')->default(false);
             $table->string('password');
@@ -25,8 +28,6 @@ class CreateUsersTable extends Migration
             $table->string('telegram');
             $table->string('coster');
             $table->string('custumchannel');
-            $table->enum('servicegroup');
-            $table->enum('servicetype');
             $table->rememberToken();
             $table->timestamps();
         });

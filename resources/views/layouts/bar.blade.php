@@ -7,27 +7,15 @@
                     <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
                         <li>
                             <div class="notification-title"> Notification</div>
-                            <div class="notification-list">
+                            <!-- <div class="notification-list">
                                 <div class="list-group"> <a href="#" class="list-group-item list-group-item-action active">
                                         <div class="notification-info">
                                             <div class="notification-list-user-img"><img src="https://img.icons8.com/office/100/000000/administrator-female.png" alt="" class="user-avatar-md rounded-circle"></div>
-                                            <div class="notification-list-user-block"><span class="notification-list-user-name">Jeremy Hukonah</span>accepted your invitation to join the team. <div class="notification-date">2 min ago</div>
+                                            <div class="notification-list-user-block"><span class="notification-list-user-name">your notificatin here</span>click this to see<div class="notification-date">2 min ago</div>
                                             </div>
                                         </div>
-                                    </a> <a href="#" class="list-group-item list-group-item-action">
-                                        <div class="notification-info">
-                                            <div class="notification-list-user-img"><img src="https://img.icons8.com/color/48/000000/administrator-female.png" alt="" class="user-avatar-md rounded-circle"></div>
-                                            <div class="notification-list-user-block"><span class="notification-list-user-name">John Sammy</span>updated the email address <div class="notification-date">2 days ago</div>
-                                            </div>
-                                        </div>
-                                    </a> <a href="#" class="list-group-item list-group-item-action">
-                                        <div class="notification-info">
-                                            <div class="notification-list-user-img"><img src="https://img.icons8.com/color/100/000000/name.png" alt="" class="user-avatar-md rounded-circle"></div>
-                                            <div class="notification-list-user-block"><span class="notification-list-user-name">Kioh Samso</span> is watching your main repository <div class="notification-date">2 min ago</div>
-                                            </div>
-                                        </div>
-                                    </a> </div>
-                            </div>
+                                </div>
+                            </div> -->
                         </li>
                         <li>
                             <div class="list-footer"> <a href="#">View all notifications</a></div>

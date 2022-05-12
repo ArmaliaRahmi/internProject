@@ -1,10 +1,22 @@
 @extends('layouts.main')
 @section('ourcode')
+<title>Login</title>
+
 
 <div class="row">
 	<div class="col-md-5 mx-auto">
+
+   @if(session()->has('success'))
+   <div class="alert alert success alert-dismissible fade show" role="alert">
+      {{ session('success') }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert"
+      aria-label="Close"></button>
+   </div>
+   @endif
 		<div id="first">
-			<div class="formLogin form ">
+         <form action="/login" method="post">
+         @csrf
+			<div class="formLogin form">
 				<div class="logo mb-3">
 					<div class="col-md-12 text-center">
                   <div class="col-lg-12 far fa-user-circle"style='font-size:48px';>
@@ -15,13 +27,13 @@
             <form action="" method="post" name="login">
                <div class="form-group">
                   <label for="inputEmail">Email address</label>
-                  <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" autofocus required>
                </div>
                <div class="form-group">
                   <label for="inputPass">Password</label>
                      <div class="input-group-append">
-                        <input id="password-field" type="password" class="form-control" name="password" placeholder="Enter Password">
-                        <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                        <input id="password-field" type="password" class="form-control" name="password" placeholder="Enter Password" required>
+                        <i toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password" style="margin-left: -25px;"></i>
                      </div>
                </div>
                <div class="col-auto">
@@ -39,6 +51,7 @@
                </div>
             </form>
          </div>
+         </form>
 		</div> 
    </div>
 </div>

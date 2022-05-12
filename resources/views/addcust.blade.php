@@ -1,9 +1,6 @@
-@extends('layouts.main')
-@include('bar1')
-@section('ourcode')
 <div class="container">
-<div class = "col-12" style="margin-bottom: 20px; margin-left: 145px; margin-top: 20px; margin-right: 10px; width: 1000px;"> 
 <div class="row">
+	<div class="card-md-3 mt-5 mr-8 ml-10 mx-auto">
     <div class="card-deck">
       <div class="card">
         <div class="card-header">
@@ -50,7 +47,7 @@
       <div class="card">
         <div class="card-header">
           In Progress
-          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modalAddTask" style="float: right">
+           <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modalAddTask" style="float: right">
           <i style="font-size:10px" class="fa">&#xf055;<span data-feather="plus"></span> Add Task</button></i>
         </div>
         <div class="card-body">
@@ -79,7 +76,7 @@
         </div>
       </div>
       <div class="card">
-      <div class="card-header">Completed</div>
+      <div class="card-header">Complate</div>
       <div class="card-body">
       <div class="card p-1 mb-2 mr-0 ml-0 draggable shadow-sm" id="cd6" draggable="true" ondragstart="drag(event)">
             <div class="card-title">
@@ -117,53 +114,3 @@
           </div>
       </div>
 </div>
-      <!-- Modal add task -->
-      <div class="modal fade" id="modalAddTask" tabindex="-1" role="dialog" 
-        aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Add Task</h4>
-            </div>
-            <!-- Modal Body -->
-            <div class="modal-body">
-              <form action="" method="post" autocomplete="off">
-                <div class="form-group">
-                  <label for="task_title">Task Title:</label>
-                  <input type="text" class="form-control" placeholder="Enter task name"  id="task_title" name="task_title">
-                </div>
-                <div class="form-group">
-                  <label for="task_details">Task Details:</label>
-                  <textarea class="form-control"  placeholder="Enter task details"  rows="5" id="task_details" name="task_details"></textarea>
-                </div>
-                <div class="form-group">
-                  <label >Due Date:</label>
-                  <input type="date" id="due_date" name="due_date" min="1000-01-01" max="3000-12-31" class="form-control">
-                </div>
-                <div class="form-group">
-                  <label for="task_status">Task Status:</label>
-                  <select class="form-control" id="task_status" name="task_status">
-                    <option value="Todo">Todo</option>
-                    <option value="In Progress">In Progress</option>
-                  </select>
-                </div>
-                <button type="submit" name="submit" id="submit" class="btn btn-outline-secondary">Submit</button>
-              </form>
-            </div>
-            <!-- Modal Footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger"
-                data-dismiss="modal">
-              Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end add task -->
-      </div>
-    </div>
-</div>
-</div>
-@endsection
