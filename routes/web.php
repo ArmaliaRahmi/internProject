@@ -1,7 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TaskController;
+use App\Http\Controllers\BroadcastController;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\CaptchaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,32 +18,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/login', function () {
     return view('login');
 });
+// Route::get('/login', 'LoginController@login')->name('login');
+// Route::post('loginaksi', 'LoginController@loginaksi')->name('loginaksi');
+// Route::get('home', 'HomeController@index')->name('home')->middleware('auth');
+// Route::get('logoutaksi', 'LoginController@logoutaksi')->name('logoutaksi')->middleware('auth');
+// Route::get('/register', function () {
+//     return view('register');
+// });
 
-Route::get('/register', function () {
-    return view('register');
+Route::get('/home', function () {
+    return view('home');
 });
+
+Route::get('/task', [TaskController::class, 'index'])->name('task');
+Route::get('/task/addtask', [TaskController::class, 'addtask'])->name('task');
+Route::post('/task', [TaskController::class, 'store'])->name('task');
 
 Route::get('/bar1', function () {
     return view('bar1');
-});
-Route::get('/task', function () {
-    return view('task');
-});
-
-Route::get('/sidebar1', function () {
-    return view('sidebar1');
-});
-Route::get('/bar', function () {
-    return view('bar');
-});
-Route::get('/dash', function () {
-    return view('dash');
-});
-Route::get('/detailprofile', function () {
-    return view('detailprofile');
 });
 Route::get('/calender', function () {
     return view('calender');
@@ -46,15 +50,20 @@ Route::get('/calender', function () {
 Route::get('/chat', function () {
     return view('chat');
 });
-Route::get('/broadcast', function () {
-    return view('broadcast');
-});
+// Route::get('/broadcast', function () {
+//     return view('broadcast');
+// });
+Route::get('/broadcast', [BroadcastController::class, 'index'])->name('broadcast');
+
 Route::get('/client', function () {
     return view('client');
 });
 Route::get('/report', function () {
     return view('report');
 });
+
+Route::get('/products', [ProductsController::class, 'index'])->name('products');
+
 Route::get('/contact-form', [CaptchaController::class, 'register']);
 Route::post('/captcha-validation', [CaptchaController::class, 'capthcaFormValidate']);
 Route::get('/reload-captcha', [CaptchaController::class, 'reloadCaptcha']);
