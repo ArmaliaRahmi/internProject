@@ -17,22 +17,24 @@
 
   
 <div class="row row-cols-1 row-cols-md-2">
-  <div class="col mb-4">
+  <div class="col mb-2">
     <div class="card">
-      <div class="card-header">Active</div>
+      <div class="card-header">To Do</div>
+      @foreach($task as $t)
       <div class="card-body">
-        <div class="card p-1 mb-2 mr-0 ml-0 draggable shadow-sm" id="cd1">
+        <div class="card p-1 mb-0 mr-0 ml-0 draggable shadow-sm" id="cd1">
             <div class="card-title">
               <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="customCheck1">
               <label class="custom-control-label" for="customCheck1">
-              <a class="lead font-weight-light">wYyComp - Desain</a></label>
-              <span style="float: right">20 mei 22</span>
+              <a class="lead font-weight-light">{{ $t->taskTtl }}</a></label>
+              <span style="float: right">{{ $t->dueDate }}</span>
               </div>
             </div>
-              <p class="card-text">UI Apps</p>
+              <p class="card-text">{{ $t->taskDesc }}</p>
         </div>
-        <div class="card p-1 mb-2 mr-0 ml-0 draggable shadow-sm" id="cd2" >
+        
+        <!-- <div class="card p-1 mb-2 mr-0 ml-0 draggable shadow-sm" id="cd2" >
             <div class="card-title">
               <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="customCheck2">
@@ -42,37 +44,41 @@
               </div>
             </div>
               <p class="card-text">UI/UX Apps</p>
-        </div>
+        </div> -->
       </div>
+      @endforeach
     </div>
   </div>
-  <div class="col mb-4">
+  <div class="col mb-2">
     <div class="card">
-      <div class="card-header">Completed</div>
+      <div class="card-header">On Going</div>
+      @foreach($task as $t)
       <div class="card-body">
-        <div class="card p-1 mb-2 mr-0 ml-0 draggable shadow-sm" id="cd3">
+        <div class="card p-1 mb-0 mr-0 ml-0 draggable shadow-sm" id="cd1">
             <div class="card-title">
               <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck3">
-              <label class="custom-control-label" for="customCheck3">
-              <a class="lead font-weight-light">ABC Comp - Desain</a></label>
-              <span style="float: right">20 mei 22</span>
-              </div>
-            </div>
-            <p class="card-text">Desain UI/UX</p>
-        </div>
-        <div class="card p-1 mb-2 mr-0 ml-0 draggable shadow-sm" id="cd4">
-            <div class="card-title">
-              <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck4">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
               <label class="custom-control-label" for="customCheck1">
-              <a class="lead font-weight-light">CComp - FE</a></label>
+              <a class="lead font-weight-light">{{ $t->taskTtl }}</a></label>
+              <span style="float: right">{{ $t->dueDate }}</span>
+              </div>
+            </div>
+              <p class="card-text">{{ $t->taskDesc }}</p>
+        </div>
+        
+        <!-- <div class="card p-1 mb-2 mr-0 ml-0 draggable shadow-sm" id="cd2" >
+            <div class="card-title">
+              <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck2">
+              <label class="custom-control-label" for="customCheck2">
+              <a class="lead font-weight-light">SComp - Desain</a></label>
               <span style="float: right">20 mei 22</span>
               </div>
             </div>
-              <p class="card-text">Implementasi UI/UX</p>
-        </div>
+              <p class="card-text">UI/UX Apps</p>
+        </div> -->
       </div>
+      @endforeach
     </div>
   </div>
   <div class="col mb-4">
@@ -115,7 +121,7 @@
         var myPieChart = new Chart(ctxP, {
           type: 'pie',
           data: {
-            labels: ["Active", "Complated", "Closed"],
+            labels: ["To Do", "On Going", "Closed"],
             datasets: [{
               data: [333, 333, 333],
               backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
@@ -150,7 +156,7 @@
             </div>
             <!-- Modal Body -->
             <div class="modal-body">
-              <form action="" method="post" autocomplete="off">
+              <form action="/task/store" method="post" autocomplete="off">
               <div class="form-group">
                   <label for="task_title">Company Name:</label>
                   <input type="text" class="form-control" placeholder="Enter Company name"  id="comp_title" name="comp_title">
@@ -170,8 +176,8 @@
                 <div class="form-group">
                   <label for="task_status">Task Status:</label>
                   <select class="form-control" id="task_status" name="task_status">
-                    <option value="Todo">Active</option>
-                    <option value="In Progress">Completed</option>
+                    <option value="Todo">To Do</option>
+                    <option value="In Progress">On Going</option>
                   </select>
                 </div>
                 <button type="submit" name="submit" id="submit" class="btn btn-outline-secondary">Submit</button>
