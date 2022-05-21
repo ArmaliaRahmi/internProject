@@ -35,11 +35,12 @@
     </div>
     </div>
     </div>
+        @foreach($broadcast as $b)
         <div class="card-group">
         <div class="card">
         <div class="card-body">
-        <h3 class="card-title">System Upgrade/Maintenance periodic announcement</h3>
-            <footer class="blockquote-footer"> CRM Project <cite title="Source Title">Source Title</cite></footer>
+        <h3 class="card-title">{{ $b->title }}</h3>
+            <footer class="blockquote-footer">{{ $b->ttdTtl }}</cite></footer>
         </div>
         </div>
         </div>
@@ -104,16 +105,8 @@
         <div class="card">
         <div class="card-body">
         <h5 class="card-title">Message</h5>
-        <span class="card-text">
-        Dear valued Customers,<br>
-        <br>In order to improve quality of banking products and services, Techcombank will periodically implement the maintenance procedures for IT systems from 00:00-02:30, 23rd  July 2016 and from 00:00-02:30, 28th July 2016.<br>
-        <br>During this duration, some services would be impacted:<br>
-        <br>Internet Banking/Mobile Banking<br>
-            - Card service: Both debit card (F@st Access, Visa Debit) and credit card (Visa, Master, …)<br>
-            - Automated balance inquiry via Contact Center 1800588822/23<br>
-            - Account transaction notice service via HomeBanking (SMS, Email).<br>
-        <br>Sorry for any inconvenience and thank you for your support.
-        </span>
-        <footer class="blockquote-footer"> CRM Project <cite title="Source Title">Source Title</cite></footer>
+        <span class="card-text">{{ $b->massegeDetail }}</span>
+        <footer class="blockquote-footer">{{ $b->ttdTtl }}</cite></footer>
         </div>
         </div>
+        @endforeach
