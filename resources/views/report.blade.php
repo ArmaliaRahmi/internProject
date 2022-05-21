@@ -18,36 +18,36 @@
   </thead>
   <tbody>
     <tr>
-      <td>dfg</td>
+      <td>cliet name</td>
       <td>
       <a href="#" class="doc"><i class="fa fa-folder-open-o" style="color: #6c6b70" title="vip">Doc Application</i></a>
       </td>
       <td>
-        <a href="#" class="download"><i class="fas fa-download" style="color: #6c6b70" data-toggle="tooltip" title="download"></i></a>
+        <a href="#" class="download"><i class="fas fa-download" style="color: #6c6b70" data-toggle="tooltip" title="download" download></i></a>
       </td>
     </tr>
     <tr>
-      <td>dfg</td>
+      <td>cliet name</td>
       <td>
       <a href="#" class="doc"><i class="fa fa-folder-open-o" style="color: #6c6b70" title="vip">Doc Application</i></a>
       </td>
       <td>
-        <a href="#" class="download"><i class="fas fa-download" style="color: #6c6b70" data-toggle="tooltip" title="download"></i></a>
+        <a href="#" class="download"><i class="fas fa-download" style="color: #6c6b70" data-toggle="tooltip" title="download" download></i></a>
       </td>
     </tr>
     <tr>
-      <td>dfg</td>
+      <td>cliet name</td>
       <td>
       <a href="#" class="doc"><i class="fa fa-folder-open-o" style="color: #6c6b70" title="vip">Doc Application</i></a>
       </td>
       <td>
-        <a href="#" class="download"><i class="fas fa-download" style="color: #6c6b70" data-toggle="tooltip" title="download"></i></a>
+        <a href="#" class="download"><i class="fas fa-download" style="color: #6c6b70" data-toggle="tooltip" title="download" download></i></a>
       </td>
     </tr>
   </tbody>
 </table>
 <div class="clearfix"></div>
-<ul class="pagination pull-right">
+<!-- <ul class="pagination pull-right">
   <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
   <li class="active"><a href="#">1</a></li>
   <li><a href="#">2</a></li>
@@ -55,7 +55,7 @@
   <li><a href="#">4</a></li>
   <li><a href="#">5</a></li>
   <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
-</ul>
+</ul> -->
                 
             </div>
             
