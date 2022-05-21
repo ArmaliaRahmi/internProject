@@ -14,46 +14,31 @@
         <div class="card-body">
             <h5 class="card-title">Clients</h5>
             <div class="card-body">
-            <canvas id="barChart"></canvas>
+            <canvas id="radarChart"></canvas>
             <script>
-                //bar
-            var ctxB = document.getElementById("barChart").getContext('2d');
-            var myBarChart = new Chart(ctxB, {
-            type: 'bar',
-            data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "july", "agst", "sept", "oct", "nov", "dec"],
-                datasets: [{
-                // label: '# of Votes',
-                data: [20, 35, 15, 50, 29, 39],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                yAxes: [{
-                    ticks: {
-                    beginAtZero: true
-                    }
-                }]
-                }
-            }
-            });
+                //radar
+var ctxR = document.getElementById("radarChart").getContext('2d');
+var myRadarChart = new Chart(ctxR, {
+  type: 'radar',
+  data: {
+    labels: ["E-Commerce", "Digital", "Healthcare", "Retail", "Transport", "Electronic", "Property"],
+    datasets: [{
+      label: "Client",
+      data: [5, 9, 2, 9, 5, 5, 4],
+      backgroundColor: [
+        'rgba(105, 0, 132, .2)',
+      ],
+      borderColor: [
+        'rgba(200, 99, 132, .7)',
+      ],
+      borderWidth: 2
+    }
+    ]
+  },
+  options: {
+    responsive: true
+  }
+});
             </script>
             </div>
         </div>
@@ -62,7 +47,7 @@
     <div class="col-sm-4 mb-1">
         <div class="card">
         <div class="card-body">
-            <h5 class="card-title">Products</h5>
+            <h5 class="card-title">Sales</h5>
             <div class="card-body">
             <canvas id="polarChart"></canvas>
             <script>
@@ -71,9 +56,9 @@
             var myPolarChart = new Chart(ctxPA, {
                 type: 'polarArea',
                 data: {
-                labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+                labels: ["Whatsapp", "CPRO", "Coster", "AI", "SMS"],
                 datasets: [{
-                    data: [300, 50, 100, 40, 120],
+                    data: [2, 4, 1, 1, 1],
                     backgroundColor: ["rgba(219, 0, 0, 0.1)", "rgba(0, 165, 2, 0.1)", "rgba(255, 195, 15, 0.2)",
                     "rgba(55, 59, 66, 0.1)", "rgba(0, 0, 0, 0.3)"
                     ],
@@ -94,7 +79,7 @@
     <div class="col-sm-4 mb-1">
         <div class="card">
         <div class="card-body">
-        <h5 class="card-title">Progress</h5>
+        <h5 class="card-title">Task</h5>
         <div class="card-body">
       <canvas id="pieChart"></canvas>
       <script>
@@ -103,7 +88,7 @@
         var myPieChart = new Chart(ctxP, {
           type: 'pie',
           data: {
-            labels: ["Active", "Complated", "Closed"],
+            labels: ["ToDo", "OnGoing", "Complated"],
             datasets: [{
               data: [333, 333, 333],
               backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
