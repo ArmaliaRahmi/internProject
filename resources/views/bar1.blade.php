@@ -68,7 +68,7 @@
     <div class="sidebar">
       <ul class="nav-list">
         <li>
-          <a href="/dash">
+          <a href="/home">
             <i class='bx bx-grid-alt'></i>
             <span class="links_name">Dashboard</span>
           </a>
@@ -87,6 +87,13 @@
           <span class="links_name">Clients</span>
         </a>
         <span class="tooltip">Clients</span>
+      </li>
+      <li>
+        <a href="/products">
+          <i class='bx bx-store-alt' ></i>
+          <span class="links_name">Product</span>
+        </a>
+        <span class="tooltip">Profile</span>
       </li>
       <li>
         <a href="/broadcast">
@@ -110,23 +117,18 @@
         <span class="tooltip">Profile</span>
       </li>
       <li>
-      <li>
-        <a href="#">
-          <i class='bx bx-user' ></i>
-          <span class="links_name">Profile</span>
-        </a>
-        <span class="tooltip">Profile</span>
-      </li>
-      <li>
         <a href="#">
           <i class='bx bx-cog'></i>
           <span class="links_name">Setting</span>
         </a>
         <span class="tooltip">Setting</span>
       </li>
-      <li class="profile">
-          <i class='bx bx-log-out' id="log_out" ></i>
-      </li>
+      <a href="/login">
+        <li class="profile">
+            <i class='bx bx-log-out' id="log_out" ></i>
+        </li>
+      </a>
+      
       </ul>
     </div>
   </div>
@@ -153,12 +155,12 @@
 							<div class="user-avatar">
 								<img src="https://img.icons8.com/dusk/100/000000/user-female-circle.png" alt="Maxwell Admin">
 							</div>
-							<h5 class="user-name" style="color: #6c6b70">Yuki Hayashi</h5>
-							<h6 class="user-email">yuki@Maxwell.com</h6>
+							<h5 class="user-name" style="color: #6c6b70">A Rahmi</h5>
+							<h6 class="user-email">armalia@gmail.com</h6>
 						</div>
 						<div class="about">
 							<h5 style="color: #6c6b70">About</h5>
-							<p>I'm Yuki. Full Stack Designer I enjoy creating user-centric, delightful and human experiences.</p>
+							<p>I'm Rahmi. Front-end developer. I enjoy creating user-centric, delightful and human experiences.</p>
 						</div>
 					</div>
 				</div>
@@ -173,26 +175,14 @@
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
-								<label for="fullName">Full Name</label>
-								<input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+								<label for="fullName">FIC Name</label>
+								<input type="text" class="form-control" id="fullName" placeholder="Enter full name" value="mr. X">
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
-								<label for="eMail">Email</label>
-								<input type="email" class="form-control" id="eMail" placeholder="Enter email ID">
-							</div>
-						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-							<div class="form-group">
-								<label for="phone">Phone</label>
-								<input type="text" class="form-control" id="phone" placeholder="Enter phone number">
-							</div>
-						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-							<div class="form-group">
-								<label for="website">Website URL</label>
-								<input type="url" class="form-control" id="website" placeholder="Website url">
+								<label for="eMail">Company Name</label>
+								<input type="email" class="form-control" id="eMail" placeholder="Enter email ID" value="J Comp">
 							</div>
 						</div>
 					</div>
@@ -202,26 +192,44 @@
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
-								<label for="Street">Street</label>
-								<input type="name" class="form-control" id="Street" placeholder="Enter Street">
+								<label for="Street">Service Group</label>
+								<input type="name" class="form-control" id="Street" placeholder="Enter Street" value="Shared">
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
-								<label for="ciTy">City</label>
-								<input type="name" class="form-control" id="ciTy" placeholder="Enter City">
+								<label for="ciTy">Service Type</label>
+								<input type="name" class="form-control" id="ciTy" placeholder="Enter City" value="FAQ">
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
-								<label for="sTate">State</label>
-								<input type="text" class="form-control" id="sTate" placeholder="Enter State">
+								<label for="sTate">Whatsapp</label>
+								<input type="text" class="form-control" id="sTate" placeholder="Enter State" value="*******">
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 							<div class="form-group">
-								<label for="zIp">Zip Code</label>
-								<input type="text" class="form-control" id="zIp" placeholder="Zip Code">
+								<label for="zIp">Telegram</label>
+								<input type="text" class="form-control" id="zIp" placeholder="Zip Code" value="*******">
+							</div>
+						</div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<div class="form-group">
+								<label for="zIp">Slack</label>
+								<input type="text" class="form-control" id="zIp" placeholder="Zip Code" value="*******">
+							</div>
+						</div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<div class="form-group">
+								<label for="zIp">Coster</label>
+								<input type="text" class="form-control" id="zIp" placeholder="Zip Code" value="*******">
+							</div>
+						</div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="form-group">
+								<label for="zIp">custom</label>
+								<input type="text" class="form-control" id="zIp" placeholder="Zip Code" value="*******">
 							</div>
 						</div>
 					</div>
